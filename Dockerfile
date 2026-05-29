@@ -1,8 +1,7 @@
 FROM fatedier/frps:v0.60.0
 COPY frps.toml /etc/frp/frps.toml
 
-# Mở cổng kết nối và cổng Web Dashboard
-EXPOSE 7000
+# Chỉ mở duy nhất cổng 10000 cho Render
 EXPOSE 10000
 
 CMD ["-c", "/etc/frp/frps.toml"]
