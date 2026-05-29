@@ -3,4 +3,4 @@ bindAddr = "0.0.0.0"
 bindPort = 10000
 
 # Cấu hình cổng nhận WebSocket bảo mật
-vhostHttpsPort = 10000
+vhostHttpPort = 10000
