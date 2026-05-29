@@ -1,6 +1,6 @@
 bindAddr = "0.0.0.0"
-bindPort = 7000
+# Đổi cổng tiếp nhận chính thành 10000 để trùng với cổng Web của Render
+bindPort = 10000
 
-# Bật Dashboard Web để Render nhận diện ứng dụng đang hoạt động
-webServer.addr = "0.0.0.0"
-webServer.port = 10000
+# Cấu hình cổng nhận WebSocket bảo mật
+vhostHttpsPort = 10000
