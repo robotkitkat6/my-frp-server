@@ -1,7 +1,12 @@
-FROM fatedier/frps:v0.60.0
-COPY frps.toml /etc/frp/frps.toml
+FROM alpine:latest
 
-# Chỉ mở duy nhất cổng 10000 cho Render2222
+RUN apk add --no-cache curl unzip
+RUN curl -L -H "Cache-Control: no-cache" -o /tmp/xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip && \
+    mkdir -p /usr/bin/xray && \
+    unzip /tmp/xray.zip -d /usr/bin/xray && \
+    rm -rf /tmp/xray.zip
+
+COPY config.json /usr/bin/xray/config.json
+
 EXPOSE 10000
-
-CMD ["-c", "/etc/frp/frps.toml"]
+CMD ["/usr/bin/xray/xray", "-c", "/usr/bin/xray/config.json"]
