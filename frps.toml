@@ -1,2 +1,6 @@
 bindAddr = "0.0.0.0"
 bindPort = 7000
+
+# Bật Dashboard Web để Render nhận diện ứng dụng đang hoạt động
+webServer.addr = "0.0.0.0"
+webServer.port = 10000
