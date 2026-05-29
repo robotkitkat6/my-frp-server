@@ -1,6 +1,6 @@
 bindAddr = "0.0.0.0"
-# Đổi cổng tiếp nhận chính thành 10000 để trùng với cổng Web của Render
 bindPort = 10000
-
-# Cấu hình cổng nhận WebSocket bảo mật
 vhostHttpPort = 10000
+
+# KHAI BÁO THÊM DÒNG NÀY ĐỂ BẬT TÍNH NĂNG SUBDOMAIN
+subDomainHost = "my-frp-server.onrender.com"
