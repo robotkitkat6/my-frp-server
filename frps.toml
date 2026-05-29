@@ -3,4 +3,4 @@ bindPort = 10000
 vhostHttpPort = 10000
 
 # KHAI BÁO THÊM DÒNG NÀY ĐỂ BẬT TÍNH NĂNG SUBDOMAIN
-subDomainHost = "my-frp-server.onrender.com"
+# subDomainHost = "my-frp-server.onrender.com"
